@@ -68,20 +68,18 @@
   <!-- Skills section -->
   <section class="skills" id="skills">
     <h2 class="skill-header">Mis mejores habilidades</h2>
-
-    <div class="skills-wrapper">
-      <div class="first-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+    <div class="carrousel">
+    <div id="drag">
+      <div id="spin">
+          <img src="assets/icons/icons8-bootstrap.svg"" id="img">
+          <img src="assets/icons/icons8-css3.svg" alt="" >
+          <img src="assets/icons/icons8-html-5.svg" alt="">
+          <img src="assets/icons/js.png" alt="">
+          <img src="assets/icons/github.png" alt="">
       </div>
-
-      <div class="second-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
-      </div>
+      <div id="ground">
     </div>
+  </div>
   </section>
 
   <!-- Projects section -->
@@ -128,7 +126,7 @@
       <div class="contact-form">
         <form action="https://formspree.io/f/xyylnggw" method="POST">
           <div class="form-control">
-            <label for="name">Name</label>
+            <label for="name">Nombre</label>
             <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
               required />
           </div>
@@ -138,7 +136,7 @@
               required />
           </div>
           <div class="form-control">
-            <label for="message">Message</label>
+            <label for="message">Mensaje</label>
             <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
               class="input-field" required></textarea>
           </div>
@@ -170,10 +168,11 @@
       Built with &#x2661; by
       <a href="https://www.linkedin.com/in/felipe-lentini-927a75212/" target="_blank">Felipe Lentini Design</a>
     </p>
-  </footer>e
+  </footer>
 
   <!-- Website scripts -->
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/carrousel3d.js"></script>
 
   <!-- Ion icons scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
