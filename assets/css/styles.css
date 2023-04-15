@@ -44,7 +44,7 @@ a:hover {
 }
 
 body {
-  background: rgb(248, 246, 246);
+  background: url(../images/cielo-estrellado.jpg);
   font-family: var(--font-family);
 }
 
@@ -114,17 +114,22 @@ nav ul li {
 .hero img {
   height: 37.5rem;
   width: 37.5rem;
+  border-radius: 50%;
 }
 
 .bio {
   width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  padding: 5px;
+background-color: #ffffff10;
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+color: var(--bg-color);
 }
 
 .bio h1 {
   margin-bottom: var(--bottom-margin);
+
 }
 
 .bio p {
@@ -135,18 +140,23 @@ nav ul li {
 
 /* More about */
 .more-about {
-  background-color: var(--bg-color);
+  text-align: center;
   padding: 1rem 6rem;
+  backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid white;
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  color: white;
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  color: wheat;
 }
 /* More about ends */
 
@@ -159,12 +169,12 @@ nav ul li {
 }
 
 .carrousel{
+  background: url(../images/cielo-estrellado.jpg);
   overflow: hidden;
   display: flex;
-  background: #070716;
-  perspective: 1000px;
+  perspective: 800px;
   transform-style: preserve-3d;
-  height: 100vh;
+  height: 80vh;
 }
 
 #drag,
@@ -172,6 +182,7 @@ nav ul li {
     position: relative;
     display: flex;
     margin: auto;
+    margin-top: 5rem;
     transform-style: preserve-3d;
     transform: rotateX(-10deg);
 }
@@ -179,8 +190,6 @@ nav ul li {
 #drag img {
     transform-style: preserve-3d;
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     list-style: 5px;
@@ -197,9 +206,7 @@ nav ul li {
 #ground {
     width: 50%;
     height: 50%;
-    position: absolute;
-    top: 100%;
-    left: 50%;
+    position: absolute;;
     transform: translate(-50%, -50%) rotateX(90deg);
 }
 
@@ -240,7 +247,7 @@ nav ul li {
 
 /* Projects section */
 .projects {
-  background-color: var(--bg-color);
+  background-color: rgba(255, 255, 255, 0.733);
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -289,6 +296,7 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  color: var(--bg-color);
 }
 
 .contact-form-container {
@@ -302,12 +310,13 @@ nav ul li {
 .contact-form-container label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.733);
 }
 
 .contact-form-container .input-field {
@@ -319,18 +328,20 @@ nav ul li {
   border: 2px outset var(--primary-color);
   font-size: 0.875rem;
   outline: none;
+  background-color: rgba(255, 255, 255, 0.733);
+
 }
 
 .input-field::placeholder {
   padding: 0.5rem;
-  color: var(--primary-color);
+  color: black;
 }
 
 .submit-btn {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.733);
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -352,11 +363,13 @@ nav ul li {
   position: fixed;
   right: 1%;
   bottom: 50%;
+  
 }
 
 .socicon {
   width: 2rem;
   height: 2rem;
+  border-radius: 50%;
 }
 /* Social button ends */
 
@@ -376,7 +389,8 @@ nav ul li {
 
 /* Footer section */
 footer {
-  background-color: var(--bg-color);
+  color: white;
+  background-color: rgb(0, 40, 80);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
@@ -393,7 +407,6 @@ footer {
 }
 
 .project-card {
-  background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
@@ -401,7 +414,7 @@ footer {
 }
 
 /* Media queries for responsiveness */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
   nav {
     padding: 1.5rem 1rem;
   }
@@ -441,7 +454,7 @@ footer {
   }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 1rem;
     width: 20.5rem;
   }
 
