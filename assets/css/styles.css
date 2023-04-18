@@ -220,9 +220,9 @@ nav {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid white;
   padding: 2rem;
-  transform: perspective(1000px) rotateX(20deg);
+  transform: perspective(1000px) rotateX(5deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 1.5s ease;
+  transition: transform 0.3s ease;
 
 }
 .tilt {
@@ -234,12 +234,14 @@ nav {
   margin-bottom: var(--bottom-margin);
   text-align: center;
   color: white;
+  font-size: 2.5rem;
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
   color: wheat;
+  font-size: 1.5rem;
 }
 
 /* More about ends */
@@ -548,6 +550,8 @@ footer {
   }
 
   .more-about {
+    width: 80%;
+    height: 100%;
     margin-top: 2rem;
     padding: 1rem 3.5rem;
   }

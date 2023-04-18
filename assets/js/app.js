@@ -33,15 +33,15 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-const section = document.querySelector(".more-about");
-let prevScrollpos = window.pageYOffset;
+const moreAboutSection = document.querySelector('.more-about');
 
-window.addEventListener("scroll", function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    section.classList.remove("tilt");
-  } else {
-    section.classList.add("tilt");
-  }
-  prevScrollpos = currentScrollPos;
+moreAboutSection.addEventListener('mousemove', function(e) {
+  const angleX = (e.offsetY / moreAboutSection.offsetHeight - 0.5) * 30;
+  const angleY = (e.offsetX / moreAboutSection.offsetWidth - 0.5) * 30;
+
+  moreAboutSection.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+});
+
+moreAboutSection.addEventListener('mouseleave', function() {
+  moreAboutSection.style.transform = 'perspective(1000px) rotateX(5deg)';
 });
