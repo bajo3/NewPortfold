@@ -16,6 +16,7 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+
 /* Variables end */
 
 html {
@@ -52,7 +53,7 @@ body {
 
 section {
   max-width: 1100px;
-  margin: auto; 
+  margin: auto;
 }
 
 /* CSS Resets end */
@@ -64,9 +65,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-  background-color: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   z-index: 999;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .nav-links {
@@ -81,7 +84,7 @@ nav {
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: #080808;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -102,6 +105,7 @@ nav {
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
+    color: white;
   }
 }
 
@@ -122,10 +126,15 @@ nav {
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+
   }
 
   .nav-links li {
     opacity: 0;
+  }
+
+  .nav-links li a {
+    color: white;
   }
 
   .burger {
@@ -142,6 +151,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);
@@ -182,11 +192,11 @@ nav {
 .bio {
   width: 25rem;
   padding: 5px;
-background-color: #ffffff10;
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-color: var(--bg-color);
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  color: var(--bg-color);
 }
 
 .bio h1 {
@@ -198,6 +208,7 @@ color: var(--bg-color);
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+
 /* Hero section ends */
 
 /* More about */
@@ -206,9 +217,18 @@ color: var(--bg-color);
   text-align: center;
   padding: 1rem 6rem;
   backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid white;
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid white;
+  padding: 2rem;
+  transform: perspective(1000px) rotateX(20deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 1.5s ease;
+
 }
+.tilt {
+  transform: perspective(1000px) rotateX(-20deg);
+}
+
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
@@ -221,11 +241,12 @@ border: 1px solid white;
   padding: 0.4rem;
   color: wheat;
 }
+
 /* More about ends */
 
 /* Skills section */
 .skills {
- max-width: 100%;
+  max-width: 100%;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
@@ -259,26 +280,23 @@ border: 1px solid white;
   list-style: 5px;
   text-align: center;
   box-sizing: 0 0 8px #fff;
-  -webkit-box-reflect: below 10px linear-gradient(
-    transparent,
-    transparent,
-    #0005
-  );
+  -webkit-box-reflect: below 10px linear-gradient(transparent,
+      transparent,
+      #0005);
 }
 
 #drag img:hover {
   box-shadow: 0 0 15px #fffd;
-  -webkit-box-reflect: below 10px linear-gradient(
-    transparent,
-    transparent,
-    #0007
-  );
+  -webkit-box-reflect: below 10px linear-gradient(transparent,
+      transparent,
+      #0007);
 }
 
 #ground {
   width: 50%;
   height: 50%;
-  position: absolute;;
+  position: absolute;
+  ;
   transform: translate(-50%, -50%) rotateX(90deg);
 }
 
@@ -296,6 +314,7 @@ border: 1px solid white;
   from {
     transform: rotateY(360deg);
   }
+
   to {
     transform: rotateY(0deg);
   }
@@ -303,6 +322,7 @@ border: 1px solid white;
 
 /* Estilos para adaptar el carrusel a dispositivos móviles */
 @media screen and (max-width: 768px) {
+
   #drag,
   #spin {
     margin-top: 2rem;
@@ -328,6 +348,7 @@ border: 1px solid white;
   width: 11.875rem;
   height: 11.25rem;
 }
+
 /* Skills section ends */
 
 /* Projects section */
@@ -442,6 +463,7 @@ border: 1px solid white;
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+
 /* Contacts section ends */
 
 /* Social buttons */
@@ -451,7 +473,7 @@ border: 1px solid white;
   position: fixed;
   right: 1%;
   bottom: 50%;
-  
+
 }
 
 .socicon {
@@ -459,6 +481,7 @@ border: 1px solid white;
   height: 2rem;
   border-radius: 50%;
 }
+
 /* Social button ends */
 
 /* Scroll to top button */
@@ -474,6 +497,7 @@ border: 1px solid white;
   width: 3rem;
   height: 3rem;
 }
+
 /* Scroll to top button ends */
 
 /* Footer section */
@@ -486,6 +510,7 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
 }
+
 /* Footer section ends */
 
 /* General (utilities) */
@@ -554,10 +579,10 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .hero{
+  .hero {
     margin-top: 20px;
   }
-  
+
 
   .bio {
     width: 18.3rem;

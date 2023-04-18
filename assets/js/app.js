@@ -32,3 +32,16 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const section = document.querySelector(".more-about");
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    section.classList.remove("tilt");
+  } else {
+    section.classList.add("tilt");
+  }
+  prevScrollpos = currentScrollPos;
+});
