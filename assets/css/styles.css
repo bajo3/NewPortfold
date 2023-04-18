@@ -66,9 +66,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
+  padding: 0.5rem 3.5rem;
   background-color: rgba(255, 255, 255, 0.801);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 nav h1 {
@@ -114,8 +116,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -142,6 +144,7 @@ color: var(--bg-color);
 
 /* More about */
 .more-about {
+  margin-top: 15px;
   text-align: center;
   padding: 1rem 6rem;
   backdrop-filter: blur(5px);
@@ -170,7 +173,7 @@ border: 1px solid white;
   margin-top: 2.5rem;
 }
 
-.carrousel{
+.carousel {
   background: url(../images/cielo-estrellado.jpg);
   overflow: hidden;
   display: flex;
@@ -181,59 +184,80 @@ border: 1px solid white;
 
 #drag,
 #spin {
-    position: relative;
-    display: flex;
-    margin: auto;
-    margin-top: 5rem;
-    transform-style: preserve-3d;
-    transform: rotateX(-10deg);
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-top: 5rem;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
 }
 
 #drag img {
-    transform-style: preserve-3d;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    list-style: 5px;
-    text-align: center;
-    box-sizing: 0 0 8px #fff;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  list-style: 5px;
+  text-align: center;
+  box-sizing: 0 0 8px #fff;
+  -webkit-box-reflect: below 10px linear-gradient(
+    transparent,
+    transparent,
+    #0005
+  );
 }
 
 #drag img:hover {
-    box-shadow: 0 0 15px #fffd;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+  box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px linear-gradient(
+    transparent,
+    transparent,
+    #0007
+  );
 }
 
 #ground {
-    width: 50%;
-    height: 50%;
-    position: absolute;;
-    transform: translate(-50%, -50%) rotateX(90deg);
+  width: 50%;
+  height: 50%;
+  position: absolute;;
+  transform: translate(-50%, -50%) rotateX(90deg);
 }
 
 @keyframes spin {
-    from {
-        transform: rotateY(0deg);
-    }
+  from {
+    transform: rotateY(0deg);
+  }
 
-    to {
-        transform: rotateY(360deg);
-    }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
-@keyframes spinRevert{
-    from{
-        transform: rotateY(360deg)
-    }
-    to{
-        transform: rotateY(0deg);
-    }
+@keyframes spinRevert {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
 
+/* Estilos para adaptar el carrusel a dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #drag,
+  #spin {
+    margin-top: 2rem;
+  }
+
+  #drag img {
+    box-sizing: border-box;
+    padding: 8px;
+  }
 }
 
 
 .skill-header {
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -249,7 +273,10 @@ border: 1px solid white;
 
 /* Projects section */
 .projects {
-  background-color: rgba(255, 255, 255, 0.733);
+  color: white;
+  background-color: rgba(8, 8, 8, 0.733);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -381,6 +408,7 @@ border: 1px solid white;
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
+  z-index: 99;
 }
 
 .up-arrow {
@@ -392,7 +420,9 @@ border: 1px solid white;
 /* Footer section */
 footer {
   color: white;
-  background-color: rgb(0, 40, 80);
+  background-color: rgba(10, 10, 10, 0.603);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
@@ -445,14 +475,13 @@ footer {
   }
 
   .hero {
-    margin-top: -4rem;
     flex-direction: column;
-    gap: 0;
+    margin-top: 4rem;
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    height: 50%;
+    width: 50%;
   }
 
   .bio {
@@ -492,10 +521,10 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
+  .hero{
+    margin-top: 20px;
   }
+  
 
   .bio {
     width: 18.3rem;
