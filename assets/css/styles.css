@@ -59,118 +59,30 @@ section {
 /* CSS Resets end */
 
 /* Navbar */
-/* Navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 2rem;
-  background-color: #ffffff;
-  z-index: 999;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-  z-index: 100;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  color: #080808;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 60%;
-    color: white;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .nav-links {
+.navbar {
+  background-color: #ffffff10 !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
     position: fixed;
-    right: 0px;
-    height: 100%;
-    top: 5vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 0;
+    left: 0;
     width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .nav-links li a {
-    color: white;
-  }
-
-  .burger {
-    display: block;
-  }
+    z-index: 999;
 }
 
-.nav-active {
-  transform: translateX(0%);
+.navbar-collapse{
+  justify-content: space-around !important;
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+.navbar-toggler{
+  background: white !important;;
 }
 
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+.nav-link{
+  margin-right: 30px;
+  text-align: center;
+  color: white !important;
 }
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-
 /* Navbar ends */
 
 /* Hero section */
@@ -247,109 +159,28 @@ nav {
 /* More about ends */
 
 /* Skills section */
-.skills {
-  max-width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
-.carousel {
-  background: url(../images/cielo-estrellado.jpg);
-  overflow: hidden;
+.skills{
   display: flex;
-  perspective: 800px;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
+  width: 80%;
+  height: 430px;
 }
 
-#drag,
-#spin {
-  position: relative;
-  display: flex;
-  margin: auto;
-  margin-top: 5rem;
-  transform-style: preserve-3d;
-  transform: rotateX(-10deg);
+.skills img{
+  width: 0px;
+  flex-grow: 1;
+  clip-path: circle(50% at center);
+
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease-in-out;
+}
+.skills img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
-#drag img {
-  transform-style: preserve-3d;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  list-style: 5px;
-  text-align: center;
-  box-sizing: 0 0 8px #fff;
-  -webkit-box-reflect: below 10px linear-gradient(transparent,
-      transparent,
-      #0005);
-}
-
-#drag img:hover {
-  box-shadow: 0 0 15px #fffd;
-  -webkit-box-reflect: below 10px linear-gradient(transparent,
-      transparent,
-      #0007);
-}
-
-#ground {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  ;
-  transform: translate(-50%, -50%) rotateX(90deg);
-}
-
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
-@keyframes spinRevert {
-  from {
-    transform: rotateY(360deg);
-  }
-
-  to {
-    transform: rotateY(0deg);
-  }
-}
-
-/* Estilos para adaptar el carrusel a dispositivos móviles */
-@media screen and (max-width: 768px) {
-
-  #drag,
-  #spin {
-    margin-top: 2rem;
-  }
-
-  #drag img {
-    box-sizing: border-box;
-    padding: 8px;
-  }
-}
-
-
-.skill-header {
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.skills-wrapper img {
-  padding: 1.25rem;
-}
-
-.icon {
-  width: 11.875rem;
-  height: 11.25rem;
-}
 
 /* Skills section ends */
 
