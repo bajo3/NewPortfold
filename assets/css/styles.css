@@ -186,7 +186,8 @@ section {
 @media screen and (max-width: 780px) {
 
   .skills img:hover {
-    width: 40%;
+    width: 80%x;
+}
 }
 
 
@@ -439,5 +440,4 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
-}
 }
