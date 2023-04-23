@@ -161,6 +161,8 @@ section {
 /* Skills section */
 .skills{
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
   width: 80%;
   height: 430px;
 }
@@ -180,6 +182,13 @@ section {
   opacity: 1;
   filter: contrast(120%);
 }
+
+@media screen and (max-width: 780px) {
+
+  .skills img:hover {
+    width: 40%;
+}
+
 
 
 /* Skills section ends */
@@ -430,4 +439,5 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+}
 }
