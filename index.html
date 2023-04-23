@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+     <!-- Animate Slicky-->
+     <link rel="stylesheet" href="assets/css/slick/slick.css">
+     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+
   <!--CSS Styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -17,6 +21,10 @@
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Felipe Lentini | Web Developer</title>
+
+ 
+ 
+  
 </head>
 
 <body>
@@ -77,6 +85,7 @@
   
 
   <!-- Skills section -->
+  <h1>Mis habilidades</h1>
   <section class="skills">
     <img src="assets/icons/github.png" alt="">
     <img src="assets/icons/icons8-bootstrap.svg" alt="">
@@ -89,42 +98,69 @@
 
   
   <!-- Projects section -->
-  <section class="projects" id="projects">
-    <h2 class="projects-title">Algunos de mis Proyectos Recientes</h2>
-    <div class="projects-container">
-      <div class="project-container project-card">
-        <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Expense Tracker</h3>
-        <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
-      </div>
-      <div class="project-container project-card">
-        <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Netflix Clone</h3>
-        <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
-      </div>
-      <div class="project-container project-card">
-        <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Greeny Earth</h3>
-        <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
-      </div>
-    </div>
-  </section>
+  <section class="projects">
+    <h1>Mis habilidades</h1>
+  <div class="carousel">
+		<div class="card">
+			<img src="/assets/images/Projects/Calculadora.png" alt="Calculadora">
+			<h2>Calculadora</h2>
+			<p>Calculadora funcional responsive</p>
+			<a href="#bajo3.github.io/Calculadora/">Ir a pagina</a>
+		</div>
+		<div class="card">
+			<img src="/assets/images/Projects/Carrousel3D.png" alt="Carrousel3D">
+			<h2>CArrousel 3D</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
+		<div class="card">
+      <img src="/assets/images/Projects/JesusDiaz Cotizador.png" alt="Carrousel3D">
+			<h2>Cotizador de creditos</h2>
+			<p>Simulador de prestamo que toma como parametros el año del vechiculo para dar diferente TNA
+      </p>
+			<a href="bajo3.github.io/Cotizador-de-creditos/">Ir a pagina</a>
+		</div>
+		<div class="card">
+			<img src="/assets/images/Projects/Games.png" alt="Imagen de la tarjeta">
+			<h2>Título de la tarjeta</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
+		<div class="card">
+			<img src="/assets/images/Projects/JD Page.png" alt="Imagen de la tarjeta">
+			<h2>Título de la tarjeta</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
+		<div class="card">
+			<img src="/assets/images/Projects/Links.png" alt="Imagen de la tarjeta">
+			<h2>Título de la tarjeta</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
 
+    <div class="card">
+			<img src="/assets/images/Projects/Portfolio.png" alt="Imagen de la tarjeta">
+			<h2>Título de la tarjeta</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
+
+    <div class="card">
+			<img src="/assets/images/Projects/S7catalogo.png" alt="Imagen de la tarjeta">
+			<h2>Título de la tarjeta</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
+
+    <div class="card">
+			<img src="/assets/images/Projects/SimuladorPrestamo.png" alt="Imagen de la tarjeta">
+			<h2>Título de la tarjeta</h2>
+			<p>Descripción de la tarjeta.</p>
+			<a href="#">Ir a pagina</a>
+		</div>
+	</div>
+</section>
   <!-- Contact section -->
   <section class="contact" id="contact">
     <h2>Contactame</h2>
@@ -175,13 +211,21 @@
   </footer>
 
   <!-- Website scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/slicky.js"></script>
  
 
   <!-- Ion icons scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
