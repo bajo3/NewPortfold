@@ -166,7 +166,7 @@ section {
   flex-wrap: wrap;
   margin-top: 15px;
   width: 80%;
-  height: 430px;
+  height: 530px;
 }
 
  h1{
@@ -194,7 +194,7 @@ section {
 @media screen and (max-width: 780px) {
 
   .skills img:hover {
-    width: 0%;
+    width: 50%;
 }
 }
 
@@ -419,4 +419,15 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+}
+
+
+.card {
+  position: relative !important;
+}
+
+.card a {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
 }
