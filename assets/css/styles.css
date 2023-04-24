@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -16,14 +16,6 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-
-/* Variables end */
-
-html {
-  scroll-behavior: smooth;
-}
-
-
 
 /* CSS Resets */
 * {
@@ -40,6 +32,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--primary-color);
+  transition: color var(--transition);
 }
 
 a:hover {
@@ -47,7 +40,7 @@ a:hover {
 }
 
 body {
-  background: url(../images/cielo-estrellado.jpg);
+  background-image: url("../images/cielo-estrellado.jpg");
   font-family: var(--font-family);
 }
 
@@ -112,7 +105,7 @@ nav a:hover {
 .bio {
   width: 25rem;
   padding: 15px;
-  background-color: #ffffff10;
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -120,8 +113,7 @@ nav a:hover {
 }
 
 .bio h1 {
-  margin-bottom: var(--bottom-margin);
-
+  margin-bottom: var(--bottom-margin-2);
 }
 
 .bio p {
@@ -135,23 +127,21 @@ nav a:hover {
 .more-about {
   margin-top: 15px;
   text-align: center;
-  padding: 1rem 6rem;
+  padding: 2rem 6rem;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid white;
-  padding: 2rem;
   transform: perspective(1000px) rotateX(5deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-
 }
-.tilt {
+
+.more-about.tilt {
   transform: perspective(1000px) rotateX(-20deg);
 }
 
-
 .more-about h2 {
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: var(--bottom-margin-2);
   text-align: center;
   color: white;
   font-size: 2.5rem;
@@ -356,6 +346,31 @@ footer {
   margin: 10px;
 }
 
+/*Loader*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 100px;
+  height: 100px;
+}
+
+.loader.hide {
+  display: none;
+}
+
+
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 780px) {
 
@@ -376,10 +391,10 @@ footer {
   }
 
   .more-about {
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    padding: 10px;
   }
 
   .more-about h2 {
@@ -387,6 +402,7 @@ footer {
   }
 
   .more-about p {
+    font-size: 19px;
     text-align: justify;
   }
 

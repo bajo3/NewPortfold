@@ -1,231 +1,355 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Animate Slicky-->
+    <link rel="stylesheet" href="assets/css/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css" />
 
-     <!-- Animate Slicky-->
-     <link rel="stylesheet" href="assets/css/slick/slick.css">
-     <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <!--CSS Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!--CSS Styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/FL.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/F.L.png"
+    />
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/FL.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/F.L.png" />
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Felipe Lentini | Web Developer</title>
+  </head>
 
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Felipe Lentini | Web Developer</title>
+  <body>
+    <div class="loader">
+      <img src="assets/images/loader-/Bean Eater-1s-200px.gif" alt="Loader" />
+    </div>
 
- 
- 
-  
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Acerca de mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#contact" >Contacto</a>
-          </li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#more-about">Acerca de mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="hero" id="about">
-    <img src="assets/images/1.png" alt="jane-doe" loading="lazy" class="hero-img" />
-    <div class="bio animate__animated animate__shakeX">
-      <h2 class="bio-title">Bienvenidos a mi portfoldio</h2>
-      <p class="bio-text">
-        Mi nombre es Felipe, tengo 26 años y actualmente estoy viviendo en la ciudad de Tandil. Estoy estudiando la
-        carrera de React en Coderhouse.
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/1.png"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">Bienvenidos a mi portfoldio</h2>
+        <p class="bio-text">
+          Mi nombre es Felipe, tengo 26 años y actualmente estoy viviendo en la
+          ciudad de Tandil. Estoy estudiando la carrera de React en Coderhouse.
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about" id="more-about">
+      <h2>Más acerca de mi</h2>
+      <p>
+        Algunas de las tecnologías que más utilizo son: HTML5, CSS3, JavaScript,
+        SASS y Bootstrap.
       </p>
-    </div>
-  </section>
+      <p>
+        Hoy en día me encuentro trabajando en el área de Marketing como
+        Community Manager en una concesionaria de autos. En cuanto a mi
+        personalidad,
+      </p>
+      <p>
+        Me considero que soy muy sociable, por lo que disfruto trabajar en
+        equipo y me adapto muy bien a los ambientes laborales. Disfruto de
+        innovar siempre y aprender nuevas tareas que amplíen mis experiencias.
+      </p>
+    </section>
 
-  <!-- More about -->
-  <section class="more-about">
-    <h2>Más acerca de mi</h2>
-    <p>
-      Algunas de las tecnologías que más utilizo son: HTML5, CSS3,
-      JavaScript, SASS y Bootstrap.
-    </p>
-    <p>
-      Hoy en día me encuentro trabajando en el área de Marketing como Community
-      Manager en una concesionaria de autos. En cuanto a mi personalidad,
-    </p>
-    <p>
-      Me considero que soy muy sociable, por lo que disfruto trabajar en equipo y me adapto muy bien a los
-      ambientes laborales. Disfruto de innovar siempre y aprender nuevas tareas que amplíen mis
-      experiencias.
-    </p>
-  </section>
-  
-
-  <!-- Skills section -->
-  <h1>Mis habilidades</h1>
-  <section class="skills">
-    <img src="assets/icons/github.png" alt="">
-    <img src="assets/icons/icons8-bootstrap.svg" alt="">
-    <img src="assets/icons/icons8-css3.svg" alt="">
-    <img src="assets/icons/icons8-html-5.svg" alt="">
-    <img src="assets/icons/icons8-javascript.svg" alt="">
-    
-
-  </section>
-
-  
-  <!-- Projects section -->
-  <section class="projects">
+    <!-- Skills section -->
     <h1>Mis habilidades</h1>
-  <div class="carousel">
-		<div class="card">
-			<img src="/assets/images/Projects/Calculadora.png" alt="Calculadora">
-			<h2>Calculadora</h2>
-			<p>Calculadora funcional responsive</p>
-			<a href="#bajo3.github.io/Calculadora/">Ir a pagina</a>
-		</div>
-		<div class="card">
-			<img src="/assets/images/Projects/Carrousel3D.png" alt="Carrousel3D">
-			<h2>Carrousel 3D</h2>
-			<p>Carrousel 3D espejado con movimiento si se arrastra.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
-		<div class="card">
-      <img src="/assets/images/Projects/JesusDiaz Cotizador.png" alt="Carrousel3D">
-			<h2>Cotizador</h2>
-			<p>Simulador de prestamo que toma como parametros el año del vechiculo
-      </p>
-			<a href="bajo3.github.io/Cotizador-de-creditos/">Ir a pagina</a>
-		</div>
-		<div class="card">
-			<img src="/assets/images/Projects/Games.png" alt="Imagen de la tarjeta">
-			<h2>Título de la tarjeta</h2>
-			<p>Descripción de la tarjeta.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
-		<div class="card">
-			<img src="/assets/images/Projects/JD Page.png" alt="Imagen de la tarjeta">
-			<h2>Título de la tarjeta</h2>
-			<p>Descripción de la tarjeta.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
-		<div class="card">
-			<img src="/assets/images/Projects/Links.png" alt="Imagen de la tarjeta">
-			<h2>Título de la tarjeta</h2>
-			<p>Descripción de la tarjeta.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
+    <section class="skills" id="skills">
+      <img src="assets/icons/github.png" alt="" />
+      <img src="assets/icons/icons8-bootstrap.svg" alt="" />
+      <img src="assets/icons/icons8-css3.svg" alt="" />
+      <img src="assets/icons/icons8-html-5.svg" alt="" />
+      <img src="assets/icons/icons8-javascript.svg" alt="" />
+    </section>
 
-    <div class="card">
-			<img src="/assets/images/Projects/Portfolio.png" alt="Imagen de la tarjeta">
-			<h2>Título de la tarjeta</h2>
-			<p>Descripción de la tarjeta.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h1>Proyectos</h1>
+      <div class="carousel">
+        <div class="card">
+          <img
+            src="/assets/images/Projects/Calculadora.png"
+            alt="Calculadora"
+          />
+          <h2>Calculadora</h2>
+          <p>Calculadora funcional responsive</p>
+          <a href="#bajo3.github.io/Calculadora/">Ir a pagina</a>
+        </div>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/Carrousel3D.png"
+            alt="Carrousel3D"
+          />
+          <h2>Carrousel 3D</h2>
+          <p>Carrousel 3D espejado con movimiento si se arrastra.</p>
+          <a href="#">Ir a pagina</a>
+        </div>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/JesusDiaz Cotizador.png"
+            alt="Carrousel3D"
+          />
+          <h2>Cotizador</h2>
+          <p>
+            Simulador de prestamo que toma como parametros el año del vechiculo
+          </p>
+          <a href="bajo3.github.io/Cotizador-de-creditos/">Ir a pagina</a>
+        </div>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/Games.png"
+            alt="Imagen de la tarjeta"
+          />
+          <h2>Landing page</h2>
+          <p>Landing page tematica de juegos</p>
+          <a href="bajo3.github.io/games/">Ir a pagina</a>
+        </div>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/JD Page.png"
+            alt="Imagen de la tarjeta"
+          />
+          <h2>Jesus DIAZ</h2>
+          <p>Landing page (Galeria,Formulario,Maps,Carrousel)</p>
+          <a
+            href="https://bajo3.github.io/JesusDIaz/
+      "
+            >Ir a pagina</a
+          >
+        </div>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/Links.png"
+            alt="Imagen de la tarjeta"
+          />
+          <h2>All my links</h2>
+          <p>Pagina al estilo all my links</p>
+          <a href="https://bajo3.github.io/Enlaces/">Ir a pagina</a>
+        </div>
 
-    <div class="card">
-			<img src="/assets/images/Projects/S7catalogo.png" alt="Imagen de la tarjeta">
-			<h2>Título de la tarjeta</h2>
-			<p>Descripción de la tarjeta.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/Portfolio.png"
+            alt="Imagen de la tarjeta"
+          />
+          <h2>Portfolio</h2>
+          <p>Portoflio sencillo</p>
+          <a href="bajo3.github.io/portfolio123/">Ir a pagina</a>
+        </div>
 
-    <div class="card">
-			<img src="/assets/images/Projects/SimuladorPrestamo.png" alt="Imagen de la tarjeta">
-			<h2>Título de la tarjeta</h2>
-			<p>Descripción de la tarjeta.</p>
-			<a href="#">Ir a pagina</a>
-		</div>
-	</div>
-</section>
-  <!-- Contact section -->
-  <section class="contact" id="contact">
-    <h2>Contactame</h2>
-    <div class="contact-form-container">
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xyylnggw" method="POST">
-          <div class="form-control">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
-              required />
-          </div>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
-              required />
-          </div>
-          <div class="form-control">
-            <label for="message">Mensaje</label>
-            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
-              class="input-field" required></textarea>
-          </div>
-          <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-        </form>
+        <div class="card">
+          <img
+            src="/assets/images/Projects/S7catalogo.png"
+            alt="Imagen de la tarjeta"
+          />
+          <h2>Store</h2>
+          <p>Catalogo de preductos y filtrado por tipo</p>
+          <a href="bajo3.github.io/Store/">Ir a pagina</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="/assets/images/Projects/SimuladorPrestamo.png"
+            alt="Imagen de la tarjeta"
+          />
+          <h2>Simulador</h2>
+          <p>Simulador de prestamo completando los datos</p>
+          <a href="bajo3.github.io/Pre-entrega-Lentini-JS/">Ir a pagina</a>
+        </div>
       </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Contactame</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.instagram.com/felipelentini97/" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/felipe-lentini-927a75212/"
+        target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/bajo3?tab=repositories" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
     </div>
-  </section>
 
-  <!-- Social accounts - Fixed to the right -->
-  <div class="socials">
-    <a href="https://www.instagram.com/felipelentini97/" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy"
-        class="socicon" /></a>
-    <a href="https://www.linkedin.com/in/felipe-lentini-927a75212/" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
-        class="socicon" /></a>
-    <a href="https://github.com/bajo3?tab=repositories" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
-  </div>
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
 
-  <!-- Scroll to top -->
-  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
-      alt="" /></i>
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a
+          href="https://www.linkedin.com/in/felipe-lentini-927a75212/"
+          target="_blank"
+          >Felipe Lentini Design</a
+        >
+      </p>
+    </footer>
 
-  <!-- Footer section -->
-  <footer>
-    <p class="copy">&copy; Copyright 2023</p>
-    <p class="copy">
-      Built with &#x2661; by
-      <a href="https://www.linkedin.com/in/felipe-lentini-927a75212/" target="_blank">Felipe Lentini Design</a>
-    </p>
-  </footer>
+    <!-- Website scripts -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/slicky.js"></script>
 
-  <!-- Website scripts -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/slicky.js"></script>
- 
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- Ion icons scripts -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
 </html>
