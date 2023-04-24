@@ -96,6 +96,7 @@
     display: block;
     margin: auto;
     margin-top: 5px;
+    width: 100%;
 }
 .slick-slide.slick-loading img
 {
@@ -126,14 +127,24 @@
 }
 
 .card{
+    position: relative !important;
     color: white !important;
     background-color: #ffffff10  !important;
     backdrop-filter: blur(5px) !important;
     -webkit-backdrop-filter: blur(5px) !important;
+    margin-right: 5px;
+    border: 3px solid white !important;;
 }
 
 .card p{
 margin-bottom: 30px;
-bottom: 0;
+margin-right: 5px;bottom: 0;
 }
 
+  .card a {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    text-align: center;
+    color: white;
+  }
