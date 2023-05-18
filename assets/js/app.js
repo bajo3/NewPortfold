@@ -12,6 +12,8 @@ function hideLoader() {
   loader.classList.add('hide');
 }
 
+
+
 // Scroll to top
 const scrollUp = document.querySelector("#scroll-up");
 scrollUp.addEventListener("click", () => {
@@ -32,4 +34,8 @@ const rotateSection = (e) => {
 moreAboutSection.addEventListener('mousemove', rotateSection);
 moreAboutSection.addEventListener('mouseleave', () => {
   moreAboutSection.style.transform = 'perspective(1000px) rotateX(5deg)';
+
+
+
+  
 });
